@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include android:id="@+id/header"
+             layout="@layout/header"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/header">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgEmailIcon"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/profile_icon_email"
+                android:layout_marginTop="45dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_input_height"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/txtNewEmail"
+                android:layout_marginTop="35dp"
+                android:hint="@string/profile_new_email"
+                android:paddingLeft="@dimen/edit_text_horizontal_padding"
+                android:paddingRight="@dimen/edit_text_horizontal_padding"
+                android:background="@drawable/text_rounded_rectangle_bg"
+                android:layout_below="@+id/imgEmailIcon"
+                android:layout_marginLeft="44dp"
+                android:layout_marginRight="44dp"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/profile_change"
+                android:id="@+id/btnChange"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/common_button_selector"
+                android:textSize="20sp"
+                android:layout_below="@+id/txtNewEmail"
+                android:layout_marginLeft="44dp"
+                android:layout_marginRight="44dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="40dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

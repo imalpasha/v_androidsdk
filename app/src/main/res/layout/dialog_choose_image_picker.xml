@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent_dark"
+                android:id="@+id/viewGroupDialogContainer">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_chooser_image_container_bg"
+        android:layout_margin="20dp"
+        android:layout_centerVertical="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/dialog_chooser_image_btn_selector"
+            android:text="@string/dialog_image_chooser_take_a_photo"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:id="@+id/btnTakePhoto"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/dialog_chooser_image_btn_selector"
+            android:text="@string/dialog_image_chooser_choose_from_gallery"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:id="@+id/btnChooseFromGallery"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

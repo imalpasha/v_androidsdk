@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="header_bg">@color/primary_color</color>
+    <color name="header_title">@color/white</color>
+    <color name="common_button">#FFC20E</color>
+    <color name="common_button_dark">#E0A800</color>
+    <color name="dialog_chooser_image_btn_selected">#22000000</color>
+    <color name="text_rounded_rectanngle_bg_border">#696B71</color>
+
+    <!-- HOME GUEST -->
+    <color name="home_guest_facebook_button">#084F7F</color>
+    <color name="home_guest_facebook_button_dark">#063C60</color>
+
+    <!-- HOME -->
+    <color name="home_list_item_bg_placeholder">#ddd</color>
+
+    <!-- Swipe Refresh Color -->
+    <color name="swipe_refresh_color_1">@color/primary_color</color>
+    <color name="swipe_refresh_color_2">@color/gold_orange</color>
+    <color name="swipe_refresh_color_3">@color/very_dark_blue</color>
+
+    <color name="share_btn_bg">#2F3490</color>
+    <color name="delete_btn_bg">#E41F2C</color>
+
+    <!-- PALETTE -->
+    <color name="primary_color">@color/mandarin_orange</color>
+    <color name="primary_color_dark">#EA680B</color>
+    <color name="mandarin_orange">#5c4d94</color>
+    <color name="gold_orange">#FFC20E</color>
+    <color name="very_dark_blue">#0A1A21</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#eee</color>
+    <color name="black">#000000</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="transparent_white">#8fff</color>
+    <color name="transparent_dark">#8000</color>
+    <color name="transparent_dark_light">#1000</color>
+    <color name="stock_avaiable_text_color">#333333</color>
+    <color name="expired_voucher_item_background">#d2d2d2</color>
+    <color name="almost_expired_voucher_item_background">#dedbea</color>
+    <color name="line_color">#dedbea</color>
+</resources>

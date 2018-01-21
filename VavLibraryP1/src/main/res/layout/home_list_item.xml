@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_list_item_height"
+                android:background="@color/home_list_item_bg_placeholder"
+                android:id="@+id/viewGroupItemContainer">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgItemCoverImage"
+        android:src="@drawable/ic_image_placeholder"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:indeterminate="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/viewGroupItemInfo"
+        android:background="@drawable/view_group_home_item_info_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data"
+            android:id="@+id/lblItemName"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="@dimen/home_list_item_padding"
+            android:paddingRight="@dimen/home_list_item_padding"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/no_data"
+            android:id="@+id/lblItemDesc"
+            android:layout_below="@+id/lblItemName"
+            android:paddingLeft="@dimen/home_list_item_padding"
+            android:paddingRight="@dimen/home_list_item_padding"
+            android:maxLines="2"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data"
+        android:id="@+id/lblItemLocation"
+        android:textColor="@color/white"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="2"
+        android:layout_toRightOf="@+id/imgItemPlace"
+        android:layout_alignBottom="@+id/imgItemPlace"
+        android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgItemPlace"
+        android:src="@drawable/details_icon_add"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

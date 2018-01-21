@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgVavingIndicator"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgClose"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:src="@drawable/close"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/pointsCollectView"
+        android:background="#64ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_above="@+id/relativeLayoutCenterImage"
+            android:id="@+id/Great"
+            android:text="@string/great"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:id="@+id/relativeLayoutCenterImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/centerImageViewCircle"
+                android:src="@drawable/coin"
+                android:layout_width="220dp"
+                android:layout_height="220dp" />
+
+            <TextView
+                android:id="@+id/points"
+                android:text="10"
+                android:textStyle="bold"
+                android:textSize="55sp"
+                android:layout_marginTop="-10dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_alignLeft="@+id/centerImageViewCircle"
+                android:layout_alignStart="@+id/centerImageViewCircle"
+                android:layout_alignRight="@+id/centerImageViewCircle"
+                android:layout_alignEnd="@+id/centerImageViewCircle"
+                android:layout_alignTop="@+id/centerImageViewCircle"
+                android:layout_alignBottom="@+id/centerImageViewCircle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutbottom"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/relativeLayoutCenterImage"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/you_received_a"
+                android:gravity="center_horizontal"
+                android:id="@+id/collectedPoints"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vav_coin"
+                android:id="@+id/lblVavCoinInfo"
+                android:gravity="center_horizontal"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/linearLayoutbottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*Swipe to retrieve"
+            android:gravity="center_horizontal"
+            android:id="@+id/swipeToRetrieve"
+            android:textSize="12sp"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+</RelativeLayout>

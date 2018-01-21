@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="image_profile_coin_size">40dp</dimen>
+    <dimen name="voucher_use_box_height">300dp</dimen>
+</resources>

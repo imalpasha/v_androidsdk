@@ -1,0 +1,58 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+        classpath 'com.android.tools.build:gradle:2.2.0'
+    }
+}
+apply plugin: 'com.android.library'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23i
+        multiDexEnabled true
+    }
+    productFlavors {
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        preDexLibraries = false
+    }
+}
+repositories {
+    jcenter()
+    maven { url 'https://maven.fabric.io/public' }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.8.1'
+    compile 'com.isseiaoki:simplecropview:1.0.15'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.google.android.gms:play-services-gcm:8.3.0'
+    compile 'com.squareup.okhttp:okhttp:2.6.0'
+    compile 'com.google.code.gson:gson:2.5'
+    compile files('libs/pincast_fat.jar')
+    compile 'com.android.support:multidex:1.0.1'
+
+    //    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+    //        transitive = true;
+    //    }
+}

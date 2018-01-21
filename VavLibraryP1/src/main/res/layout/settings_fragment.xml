@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include android:id="@+id/header"
+             layout="@layout/header"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:text="@string/settings_general"
+                android:id="@+id/lblGeneral"
+                android:textSize="13sp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_color"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/primary_color"
+                android:id="@+id/divider1"
+                android:layout_below="@+id/lblGeneral"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/viewGroupNotification"
+                android:background="@drawable/profile_view_group_bg_selector"
+                android:layout_below="@+id/divider1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="@string/settings_general_notification"
+                    android:id="@+id/lblNotification"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/primary_color"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/viewGroupVoucher"
+                android:background="@drawable/profile_view_group_bg_selector"
+                android:layout_below="@+id/viewGroupNotification">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="@string/settings_general_voucher"
+                    android:id="@+id/lblVoucher"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/primary_color"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/viewGroupStamp"
+                android:background="@drawable/profile_view_group_bg_selector"
+                android:layout_below="@+id/viewGroupVoucher">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="@string/settings_general_stamp"
+                    android:id="@+id/lblStamp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/primary_color"
+                android:layout_alignParentBottom="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/divider2"
+                android:layout_below="@+id/viewGroupStamp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:text="@string/settings_about"
+                android:id="@+id/lblAbout"
+                android:textSize="13sp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_color"
+                android:layout_below="@+id/divider2"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/primary_color"
+                android:id="@+id/divider3"
+                android:layout_below="@+id/lblAbout"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/viewGroupPrivacy"
+                android:background="@drawable/profile_view_group_bg_selector"
+                android:layout_below="@+id/divider3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="@string/settings_about_privacy"
+                    android:id="@+id/lblPrivacy"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/primary_color"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/viewGroupTerms"
+                android:background="@drawable/profile_view_group_bg_selector"
+                android:layout_below="@+id/viewGroupPrivacy">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="@string/settings_about_terms"
+                    android:id="@+id/lblTerms"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/primary_color"
+                android:layout_below="@+id/viewGroupTerms"
+                android:id="@+id/divider4"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:text="@string/settings_support"
+                android:id="@+id/lblSupport"
+                android:textSize="13sp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_color"
+                android:layout_below="@+id/divider4"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/primary_color"
+                android:id="@+id/divider5"
+                android:layout_below="@+id/lblSupport"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/viewGroupHelp"
+                android:background="@drawable/profile_view_group_bg_selector"
+                android:layout_below="@+id/divider5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="@string/settings_support_help"
+                    android:id="@+id/lblHelp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/primary_color"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/viewGroupReport"
+                android:background="@drawable/profile_view_group_bg_selector"
+                android:layout_below="@+id/viewGroupHelp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="@string/settings_support_report"
+                    android:id="@+id/lblReport"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/primary_color"
+                android:layout_below="@+id/viewGroupReport"
+                android:id="@+id/divider6"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

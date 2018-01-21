@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorAccent">@color/primary_color</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+    <declare-styleable name="AlertDialog">
+        <attr name="android:layout" />
+        <attr name="buttonPanelSideLayout" format="reference" />
+        <attr name="listLayout" format="reference" />
+        <attr name="multiChoiceItemLayout" format="reference" />
+        <attr name="singleChoiceItemLayout" format="reference" />
+        <attr name="listItemLayout" format="reference" />
+        <attr name="horizontalProgressLayout" format="reference"/>
+        <attr name="progressLayout" format="reference"/>
+    </declare-styleable>
+
+    <style name="AlertDialog">
+        <item name="progressLayout">@layout/progress_dialog</item>
+        <item name="horizontalProgressLayout">@layout/alert_dialog_progress</item>
+    </style>
+
+</resources>

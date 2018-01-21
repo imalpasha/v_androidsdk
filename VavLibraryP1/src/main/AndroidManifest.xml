@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vav.cn">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- [START gcm_permission] -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <!-- [END gcm_permission] -->
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.network" />
+
+    <application
+        android:name="com.vav.cn.MainApplication"
+        android:largeHeap="true"
+        android:allowBackup="true">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+        <receiver android:process=":remote" android:name="com.senstation.android.pincast.NetworkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- [START gcm_receiver] -->
+
+        <!-- [END gcm_receiver] -->
+
+        <!-- [START gcm_listener] -->
+        <service
+            android:name="com.vav.cn.gcm.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener] -->
+        <!-- [START instanceId_listener] -->
+        <service
+            android:name="com.vav.cn.gcm.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener] -->
+        <service
+            android:name="com.vav.cn.gcm.RegistrationIntentService"
+            android:exported="false">
+        </service>
+
+        <activity
+            android:name="com.vav.cn.SplashScreen"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name="com.vav.cn.HomeGuestActivity"
+                  android:configChanges="orientation"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTask"/>
+        <activity
+            android:name="com.vav.cn.SignUpActivity"
+            android:parentActivityName="com.vav.cn.HomeGuestActivity"
+                  android:configChanges="orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vav.cn.HomeGuestActivity"
+                />
+        </activity>
+        <activity
+            android:name="com.vav.cn.TermsAndCondActivity"
+            android:parentActivityName="com.vav.cn.SignUpActivity"
+                  android:configChanges="orientation"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vav.cn.SignUpActivity"
+                />
+        </activity>
+        <activity
+            android:name="com.vav.cn.LogInActivity"
+            android:parentActivityName="com.vav.cn.HomeGuestActivity"
+                  android:configChanges="orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+                  android:launchMode="singleTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vav.cn.HomeGuestActivity"
+                />
+        </activity>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name="com.vav.cn.HomeMemberActivity"
+                  android:configChanges="orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize"
+                  android:launchMode="singleTask"
+            android:exported="true"/>
+
+
+        <activity android:name="com.facebook.FacebookActivity"
+                  android:configChanges=
+                      "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:label="@string/app_name" />
+
+        <activity
+            android:name="com.vav.cn.CropImageActivity"
+                  android:configChanges="orientation"
+                  android:screenOrientation="portrait"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="727cc5ce0dd6d307fac01fba2ace80af8e7d35f7" />
+    </application>
+
+</manifest>

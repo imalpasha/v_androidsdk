@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+    <string name="app_name">VAV KL</string>
+    <string name="facebook_app_id">1000956219957680</string>
+
+    <string name="action_about_vav">TENTANG VAV</string>
+    <string name="action_logout">Log keluar</string>
+    <string name="action_settings">Tetapan</string>
+    <string name="name">Nama</string>
+    <string name="email">Emel</string>
+    <string name="phone_number">Telefon</string>
+    <string name="no_data">Tiada data</string>
+    <string name="loading_data">Memuatkan data</string>
+    <string name="ok">OK</string>
+    <string name="or">atau</string>
+    <string name="password">kata laluan</string>
+    <string name="please_click_back_to_exit">Sila klik kembali lagi untuk keluar</string>
+
+    <string name="crop_image_title">Imej tanaman</string>
+    <string name="crop_image_button">SELESAI</string>
+
+    <string name="details_title">Butiran</string>
+
+    <string name="dialog_yes_btn">Ya</string>
+    <string name="dialog_no_btn">Tak</string>
+    <string name="dialog_image_chooser_take_a_photo">Mengambil gambar</string>
+    <string name="dialog_image_chooser_choose_from_gallery">Pilih dari Galeri</string>
+
+    <string name="dialog_curr_password_incorrect_title">Kata laluan salah</string>
+    <string name="dialog_curr_password_incorrect_message">Kata laluan semasa yang salah</string>
+    <string name="dialog_confirm_password_incorrect_title">Kata laluan salah</string>
+    <string name="dialog_confirm_password_incorrect_message">Kata laluan baru dan Sahkan kata laluan tidak sepadan</string>
+
+    <string name="dialog_loading_message">Memuatkan... Sila tunggu...</string>
+    <string name="dialog_log_out_title"></string>
+    <string name="dialog_log_out_message">Anda pasti mahu log keluar?</string>
+    <string name="dialog_log_out_btn_positive">@string/dialog_yes_btn</string>
+    <string name="dialog_log_out_btn_negative">@string/dialog_no_btn</string>
+    <string name="dialog_not_online_title">Sambungan rangkaian tidak ada</string>
+    <string name="dialog_not_online_content">Menyambung kepada rangkaian Wi-Fi atau data selular untuk meneruskan penggunaan</string>
+    <string name="dialog_not_online_negative_button">Pergi ke tetapan</string>
+    <string name="dialog_not_online_positive_button">OK</string>
+    <string name="dialog_sign_up_name_too_short_title">Nama tidak sah</string>
+    <string name="dialog_sign_up_name_too_short_content">Nama mesti antara 3-25 aksara</string>
+    <string name="dialog_sign_up_name_too_short_button">OK</string>
+    <string name="dialog_sign_up_phone_number_too_short_title">Nombor telefon tidak sah</string>
+    <string name="dialog_sign_up_phone_number_too_short_content">Nombor telefon mesti antara 8-12 aksara</string>
+    <string name="dialog_sign_up_phone_number_too_short_button">OK</string>
+    <string name="dialog_sign_up_invalid_email_title">Emel tidak sah</string>
+    <string name="dialog_sign_up_invalid_email_content">Sila masukkan e-mel dengan format emel yang sah</string>
+    <string name="dialog_sign_up_invalid_email_button">OK</string>
+    <string name="dialog_sign_up_password_too_short_title">Kata laluan tidah sah</string>
+    <string name="dialog_sign_up_password_too_short_content">Kata laluan harus menjadi antara 8-25 aksara</string>
+    <string name="dialog_sign_up_password_too_short_button">OK</string>
+    <string name="dialog_json_error_title">Kod:</string>
+    <string name="dialog_json_error_message">Harap maaf, aplikasi terbengkalai</string>
+
+    <string name="dialog_send_request_failed_title">Ralat sambungan</string>
+    <string name="dialog_send_request_failed_message">Please reconneSila sambungkan semula internet anda dan cuba lagict your internet and try again.</string>
+
+    <string name="dialog_voucher_delete_confirm_message">Confirm deleting the voucher?</string>
+
+    <string name="home_guest_facebook_login_btn">Log Masuk Dengan Facebook</string>
+    <string name="home_guest_normal_login_info">Sudah mempunyai akaun?</string>
+    <string name="home_guest_normal_login_btn">Masuk</string>
+    <string name="home_guest_normal_sign_up_btn">Cipta Akaun Baru</string>
+
+    <string name="home_member_title">VAV</string>
+
+    <string name="login_title">Log Masuk</string>
+    <string name="login_login_btn">Masuk</string>
+    <string name="login_facebook_login_btn">@string/home_guest_facebook_login_btn</string>
+    <string name="login_need_help_btn">Sudah lupa kata laluan?</string>
+
+    <string name="profile_title">Profil</string>
+    <string name="profile_last_login">Log masuk terakhir</string>
+    <string name="profile_account">Akaun</string>
+    <string name="profile_vav_coin_info">Kali anda VAV</string>
+    <string name="profile_change_name">Ubah Nama</string>
+    <string name="profile_change_number">Ubah no telefon baru</string>
+    <string name="profile_new_name">Nama Baru</string>
+    <string name="profile_new_number">No Telefon baru</string>
+    <string name="profile_change_email">Ubah Emel</string>
+    <string name="profile_new_email">Emel baru</string>
+    <string name="profile_change_password">Ubah kata laluan</string>
+    <string name="profile_current_password">kata laluan sekarang</string>
+    <string name="profile_new_password">Kata laluan baru</string>
+    <string name="profile_confirm_new_password">Ulang kata laluan baru</string>
+    <string name="profile_change">Ubah!</string>
+
+    <string name="search_title">Carian</string>
+    <string name="search_txt_hint">Cari tawaran</string>
+    <string name="search_recent_searches">CARIAN SEBELUM INI</string>
+    <string name="search_no_data">Carian tidak dijumpai</string>
+    <string name="history_no_data">Tiada sejarah carian</string>
+
+    <string name="settings_title">Tetapan</string>
+    <string name="settings_general">UMUM</string>
+    <string name="settings_general_notification">Notifikasi</string>
+    <string name="settings_general_voucher">Baucar</string>
+    <string name="settings_general_stamp">Setem</string>
+    <string name="settings_about">TENTANG</string>
+    <string name="settings_about_privacy">Polisi Privasi</string>
+    <string name="settings_about_terms">Terma</string>
+    <string name="settings_support">SOKONGAN</string>
+    <string name="settings_support_help">Pusat Bantuan</string>
+    <string name="settings_support_report">Lapor Masalah</string>
+
+    <string name="settings_support_report_title">Lapor Masalah</string>
+    <string name="settings_support_report_contact_details">Maklumat untuk dihubungi</string>
+    <string name="settings_support_report_topic">TOPIK</string>
+    <string name="settings_support_report_description_of_issue">Penerangan Isu</string>
+    <string name="settings_support_report_btn">Hantarkan laporan</string>
+
+    <string-array name="settings_support_report_topic_array">
+        <item>Topic 1</item>
+        <item>Topic 2</item>
+        <item>Topic 3</item>
+        <item>Topic 4</item>
+        <item>Topic 5</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="settings_voucher_title">Baucar</string>
+    <string name="settings_voucher_sort_by_alphabet">Susun dengan Abjad</string>
+    <string name="settings_voucher_sort_by_expire_date">Susun dengan Tarikh Luput</string>
+
+    <string name="sign_up_title">Daftar</string>
+    <string name="sign_up_done_button">Selesai!</string>
+    <string name="sign_up_tnc_info">Dengan mendaftar, saya bersetuju dengan</string>
+    <string name="sign_up_tnc_btn">Terma &amp; Syarat Vav.</string>
+
+    <string name="tnc_title">Terma Servis</string>
+    <string name="tnc_content_webview"><![CDATA[
+    <body  text="#000" style="text-align:justify;">
+    <b>Terms</b><br/>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br/><br/>
+
+<b>Terms</b><br/>
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+</body>
+    ]]></string>
+
+
+    <string name="vav_result_title">Kejutan!</string>
+    <string name="vav_result_btn_use">Guna</string>
+    <string name="vav_result_btn_keep">Simpan</string>
+    <string name="vav_result_terms_condition_apply"><![CDATA[Terma & Syarat yang dipatuhi.]]></string>
+
+
+    <string name="voucher_list_title">Senarai Baucar</string>
+    <string name="voucher_title">Baucar</string>
+    <string name="voucher_expire">Tamat tempoh:</string>
+    <string name="voucher_btn_use">GUNA</string>
+    <string name="voucher_btn_discard">BUANG</string>
+    <string name="voucher_terms_condition_apply"><![CDATA[Terma & Syarat yang dipatuhi]]></string>
+
+    <string name="voucher_use_info">Sila tunjukkan baucar kepada juruwang untuk tebus tawaran.</string>
+    <string name="voucher_use_btn_confirm">Sahkan</string>
+    <string name="voucher_use_btn_cancel">Batal</string>
+    <string name="voucher_use_confirm_has_empty_input">Please complete all the input code.</string>
+    <string name="offers_found">{0} tawaran dijumpai</string>
+    <string name="searching">Sedang cari….</string>
+    <string name="textview_open">BUKA</string>
+    <string name="terms_and_conditions"><![CDATA[Terma & Syarat Vav.]]></string>
+    <string name="get_user_profile_failed">Tidak dapat memuat data profil…</string>
+    <string name="update_user_profile_failed">Tidak dapat ubah data profil…</string>
+    <string name="terms_and_condition_link">http://vav.audaxy.com/terms.html</string>
+    <string name="need_help_link">http://vav.audaxy.com/help.html</string>
+    <string name="help_title">BANTUAN</string>
+    <string name="voucher_code">Nombor baucar:</string>
+    <string name="location_gps_turn_on_title">Aplikasi ini berfungsi dengan baik jika butang lokasi dihidupkan. Sila pergi ke tetapan untuk menghidupkan butang lokasi.</string>
+    <string name="stock_left_avaiable">Left : {0}</string>
+    <string name="login_with_an_existing_account">Login with an existing account</string>
+    <string name="vav_coin">VAV Coin</string>
+    <string name="collected_points_of">Collected points of&#160;</string>
+    <string name="you_received_a">You received a&#160;</string>
+    <string name="great">GREAT!</string>
+    <string name="voucher_book">Voucher Book</string>
+    <string name="stamp_book">Stamp Book</string>
+    <string name="redemption_history">Redemption History</string>
+    <string name="use_voucher_swipe_up_message">Please make sure you show this to the cashier to get your Coins and redeem the voucher.</string>
+    <string name="use_voucher_swipe_up_title">Enter Code</string>
+    <string name="swipe_to_redeem">Swipe to Redeem</string>
+    <string name="horray">HORRAY!</string>
+    <string name="confirm_deleting_the_stamp">Confirm deleting the stamp?</string>
+    <string name="vav_offers">Vav Offers</string>
+    <string name="offer_alert">There are offers around you. Check VAV App to find them.</string>
+    <string name="error_facebook_message">Error while connecting facebook server, Please try again later!</string>
+    <string name="open_camera_failed">Open Camera failed, Please enable camera permission on app setting</string>
+    <string name="read_gallery_file_fail">Read Gallery file failed, Please enable gallery permission on app setting</string>
+    <string name="audio_permission_needed">Need your microphone permission, Please Enable it on app setting</string>
+
+    </resources>

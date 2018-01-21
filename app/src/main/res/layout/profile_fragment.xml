@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/header"
+             layout="@layout/header"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:paddingBottom="50dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/primary_color"
+                android:layout_alignParentTop="false"
+                android:id="@+id/dividerProfileTop1"
+                android:layout_marginTop="50dp"/>
+            <ImageView
+                android:layout_width="@dimen/profile_pict_diameter"
+                android:layout_height="@dimen/profile_pict_diameter"
+                android:id="@+id/imgProfilePict"
+                android:src="@drawable/signup_icon"
+                android:layout_below="@+id/dividerProfileTop1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data"
+                android:id="@+id/lblUserName"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/imgProfilePict"
+                android:layout_marginLeft="15dp"
+                android:maxLines="2"
+                android:layout_below="@+id/dividerProfileTop1"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data"
+                android:id="@+id/lblUserEmail"
+                android:layout_below="@+id/lblUserName"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:layout_alignLeft="@+id/lblUserName"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSettings"
+                android:src="@drawable/profile_btn_setting"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/dividerProfileTop1"
+                android:padding="5dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/primary_color"
+                android:layout_alignParentBottom="false"
+                android:id="@+id/dividerProfileTop2"
+                android:layout_below="@+id/imgProfilePict"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:text="@string/profile_account"
+                android:id="@+id/lblAccount"
+                android:textSize="13sp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/dividerProfileTop2"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/primary_color"
+                android:id="@+id/dividerProfileBottom1"
+                android:layout_below="@+id/lblAccount"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/viewGroupName"
+                android:background="@drawable/profile_view_group_bg_selector"
+                android:layout_below="@+id/dividerProfileBottom1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="@string/name"
+                    android:id="@+id/lblName"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/primary_color"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/viewGroupNumber"
+                android:background="@drawable/profile_view_group_bg_selector"
+                android:layout_below="@+id/viewGroupName">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/phone_number"
+                    android:id="@+id/lblNumber"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/primary_color"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/viewGroupEmail"
+                android:background="@drawable/profile_view_group_bg_selector"
+                android:layout_below="@+id/viewGroupNumber">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/email"
+                    android:id="@+id/lblEmail"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/primary_color"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/viewGroupPassword"
+                android:background="@drawable/profile_view_group_bg_selector"
+                android:layout_below="@+id/viewGroupEmail">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/password"
+                    android:id="@+id/lblPassword"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/primary_color"
+                android:id="@+id/dividerProfileBottom2"
+                android:layout_below="@+id/viewGroupPassword"/>
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageViewCoins"
+                android:layout_below="@+id/dividerProfileBottom2"
+                android:src="@drawable/profile_stamp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/image_profile_coin_size" />
+
+            <TextView
+                android:layout_below="@+id/imageViewCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/lblUserVavCoin"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"
+                android:textColor="@color/primary_color"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/lblUserVavCoin"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collected_points_of"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/collectedPoints"
+                    android:textSize="12sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vav_coin"
+                    android:id="@+id/lblVavCoinInfo"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

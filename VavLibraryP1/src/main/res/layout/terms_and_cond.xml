@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include android:id="@+id/header"
+             layout="@layout/header"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:padding="@dimen/padding_15">
+
+        <!--        <com.inphosoft.jobfair.widget.CustomTextView
+                    android:id="@+id/lblAboutUs"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_height="wrap_content" />-->
+        <WebView
+            android:id="@+id/wvAboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+
+    </ScrollView>
+</RelativeLayout>

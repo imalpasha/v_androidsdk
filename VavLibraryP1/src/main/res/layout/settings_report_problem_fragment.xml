@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include android:id="@+id/header"
+             layout="@layout/header"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/header">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="40dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_support_report_contact_details"
+                android:id="@+id/lblContactDetails"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName|textCapWords"
+                android:hint="@string/name"
+                android:background="@drawable/txt_white_box_bg"
+                android:ems="10"
+                android:id="@+id/txtName"
+                android:layout_below="@+id/lblContactDetails"
+                android:padding="10dp"
+                android:linksClickable="false"
+                android:maxLines="1"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"
+                android:background="@drawable/txt_white_box_bg"
+                android:ems="10"
+                android:id="@+id/txtEmail"
+                android:layout_below="@+id/txtName"
+                android:padding="10dp"
+                android:maxLines="1"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="@string/phone_number"
+                android:background="@drawable/txt_white_box_bg"
+                android:ems="10"
+                android:id="@+id/txtPhoneNumber"
+                android:layout_below="@+id/txtEmail"
+                android:padding="10dp"
+                android:maxLines="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_support_report_topic"
+                android:id="@+id/lblTopic"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/txtPhoneNumber"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txt_white_box_bg"
+                android:id="@+id/viewGroupSpinnerTopic"
+                android:layout_below="@+id/lblTopic">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerTopic"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_support_report_description_of_issue"
+                android:id="@+id/lblDescriptionOfIssue"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/viewGroupSpinnerTopic"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/txtDescriptionOfIssue"
+                android:background="@drawable/txt_white_box_bg"
+                android:padding="10dp"
+                android:layout_below="@+id/lblDescriptionOfIssue"
+                android:maxLines="5"
+                android:lines="4"
+                android:gravity="top"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/settings_support_report_btn"
+                android:id="@+id/btnSendReport"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/common_button_selector"
+                android:textSize="20sp"
+                android:layout_below="@+id/txtDescriptionOfIssue"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="44dp"
+                android:layout_marginRight="44dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

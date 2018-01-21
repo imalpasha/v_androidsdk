@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".HomeGuest"
+                android:background="@drawable/login_bg">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_marginTop="85dp"
+        android:src="@drawable/login_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView"
+        android:gravity="center_horizontal|top"
+        android:paddingLeft="50dp"
+        android:paddingTop="20dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/viewGroupButton"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/big_button_height"
+            android:text="@string/home_guest_facebook_login_btn"
+            android:id="@+id/btnFacebookLogin"
+            android:textColor="@android:color/white"
+            android:background="@drawable/home_guest_facebook_login_btn_selector"
+            android:gravity="center_vertical|center_horizontal"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/big_button_height"
+            android:text="@string/home_guest_normal_sign_up_btn"
+            android:id="@+id/btnNormalSignUp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/home_guest_normal_sign_up_selector"
+            android:gravity="center_vertical|center_horizontal"
+            android:textStyle="bold"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/viewGroupLogin"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="40dp">
+
+            <com.vav.cn.widget.TextViewCustomFontType
+                android:text="@string/home_guest_normal_login_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblNormalLogIn"/>
+
+            <com.vav.cn.widget.TextViewCustomFontType
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_guest_normal_login_btn"
+                android:id="@+id/btnNormalLogIn"
+                customStyle="bold"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

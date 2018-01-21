@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">微音 KL</string>
+
+    <string name="action_about_vav">关于 微音</string>
+    <string name="action_logout">退出</string>
+    <string name="action_settings">设置</string>
+    <string name="name">姓名</string>
+    <string name="email">邮箱</string>
+    <string name="phone_number">手机号</string>
+    <string name="no_data">没有数据</string>
+    <string name="loading_data">加载数据</string>
+    <string name="ok">OK</string>
+    <string name="or">或</string>
+    <string name="password">密码</string>
+    <string name="please_click_back_to_exit">请回来再次单击以退出</string>
+
+    <string name="crop_image_title">剪裁图像</string>
+    <string name="crop_image_button">完毕</string>
+
+    <string name="details_title">详细信息</string>
+
+    <string name="dialog_yes_btn">是</string>
+    <string name="dialog_no_btn">否</string>
+    <string name="dialog_image_chooser_take_a_photo">拍照</string>
+    <string name="dialog_image_chooser_choose_from_gallery">从库中选择</string>
+
+    <string name="dialog_curr_password_incorrect_title">密码不正确</string>
+    <string name="dialog_curr_password_incorrect_message">秘密错误</string>
+    <string name="dialog_confirm_password_incorrect_title">密码不正确</string>
+    <string name="dialog_confirm_password_incorrect_message">新密码和确认密码不匹配</string>
+
+    <string name="dialog_loading_message">下载中… 请稍等…</string>
+    <string name="dialog_log_out_title"></string>
+    <string name="dialog_log_out_message">你确定要退出？</string>
+    <string name="dialog_log_out_btn_positive">@string/dialog_yes_btn</string>
+    <string name="dialog_log_out_btn_negative">@string/dialog_no_btn</string>
+    <string name="dialog_not_online_title">无网络连接</string>
+    <string name="dialog_not_online_content">连接到 Wi-fi 网络或手机数据</string>
+    <string name="dialog_not_online_negative_button">去设置</string>
+    <string name="dialog_not_online_positive_button">OK</string>
+    <string name="dialog_sign_up_name_too_short_title">无效的名称</string>
+    <string name="dialog_sign_up_name_too_short_content">名称应在 3–25 个字之间</string>
+    <string name="dialog_sign_up_name_too_short_button">OK</string>
+    <string name="dialog_sign_up_phone_number_too_short_title">无效的手机号码</string>
+    <string name="dialog_sign_up_phone_number_too_short_content">手机号码应在 8-12 个字之间</string>
+    <string name="dialog_sign_up_phone_number_too_short_button">OK</string>
+    <string name="dialog_sign_up_invalid_email_title">无效的邮箱</string>
+    <string name="dialog_sign_up_invalid_email_content">请输入有效的电子邮件格式</string>
+    <string name="dialog_sign_up_invalid_email_button">OK</string>
+    <string name="dialog_sign_up_password_too_short_title">无效的密码</string>
+    <string name="dialog_sign_up_password_too_short_content">密码应在 8-25 个字之间</string>
+    <string name="dialog_sign_up_password_too_short_button">OK</string>
+    <string name="dialog_json_error_title">代码</string>
+    <string name="dialog_json_error_message">很抱歉，有错误</string>
+
+    <string name="dialog_send_request_failed_title">连接错误</string>
+    <string name="dialog_send_request_failed_message">请重新连接您的互联网并再试一次</string>
+
+    <string name="dialog_voucher_delete_confirm_message">确定删除优惠券？</string>
+
+    <string name="home_guest_facebook_login_btn">登录Facebook</string>
+    <string name="home_guest_normal_login_info">已有帐号户口？</string>
+    <string name="home_guest_normal_login_btn">登录</string>
+    <string name="home_guest_normal_sign_up_btn">注册帐号／手机号</string>
+
+    <string name="home_member_title">微音</string>
+
+    <string name="login_title">登录帐号</string>
+    <string name="login_login_btn">登录</string>
+    <string name="login_facebook_login_btn">@string/home_guest_facebook_login_btn</string>
+    <string name="login_need_help_btn">忘了密码？</string>
+
+    <string name="profile_title">个人档案</string>
+    <string name="profile_last_login">上次登入时间</string>
+    <string name="profile_account">帐号</string>
+    <string name="profile_vav_coin_info">你微一微的次数</string>
+    <string name="profile_change_name">修改帐号昵称</string>
+    <string name="profile_change_number">修改帐号手机号</string>
+    <string name="profile_new_name">新的昵称</string>
+    <string name="profile_new_number">新的手机号</string>
+    <string name="profile_change_email">修改帐号邮箱</string>
+    <string name="profile_new_email">新的邮箱</string>
+    <string name="profile_change_password">修改帐号密码</string>
+    <string name="profile_current_password">目前的密码</string>
+    <string name="profile_new_password">输入新的密码</string>
+    <string name="profile_confirm_new_password">确认新的密码</string>
+    <string name="profile_change">修改成功！</string>
+
+    <string name="search_title">查询</string>
+    <string name="search_txt_hint">查询优惠</string>
+    <string name="search_recent_searches">最近的搜索</string>
+    <string name="search_no_data">查询不成功</string>
+    <string name="history_no_data">没有查询历史记录</string>
+
+    <string name="settings_title">设置</string>
+    <string name="settings_general">常规选项</string>
+    <string name="settings_general_notification">通知</string>
+    <string name="settings_general_voucher">优惠券</string>
+    <string name="settings_general_stamp">印章</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_about_privacy">隐私政策</string>
+    <string name="settings_about_terms">条规</string>
+    <string name="settings_support">支持</string>
+    <string name="settings_support_help">帮助中心</string>
+    <string name="settings_support_report">报告问题</string>
+
+    <string name="settings_support_report_title">报告问题</string>
+    <string name="settings_support_report_contact_details">联系方式</string>
+    <string name="settings_support_report_topic">主题</string>
+    <string name="settings_support_report_description_of_issue">问题说明</string>
+    <string name="settings_support_report_btn">发送报告</string>
+
+    <string-array name="settings_support_report_topic_array">
+        <item>Topic 1</item>
+        <item>Topic 2</item>
+        <item>Topic 3</item>
+        <item>Topic 4</item>
+        <item>Topic 5</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="settings_voucher_title">优惠</string>
+    <string name="settings_voucher_sort_by_alphabet">按字母排序</string>
+    <string name="settings_voucher_sort_by_expire_date">按截至日期排序</string>
+
+    <string name="sign_up_title">注册新帐号</string>
+    <string name="sign_up_done_button">提交注册！</string>
+    <string name="sign_up_tnc_info">点击注册，即表示你同意我们的条规</string>
+    <string name="sign_up_tnc_btn">与细则</string>
+
+    <string name="tnc_title">服务条规</string>
+    <string name="tnc_content_webview"><![CDATA[
+    <body  text="#000" style="text-align:justify;">
+    <b>Terms</b><br/>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br/><br/>
+
+<b>Terms</b><br/>
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+</body>
+    ]]></string>
+
+
+    <string name="vav_result_title">惊喜优惠</string>
+    <string name="vav_result_btn_use">使用</string>
+    <string name="vav_result_btn_keep">保存</string>
+    <string name="vav_result_terms_condition_apply">适用的条规与细则</string>
+
+
+    <string name="voucher_list_title">优惠列表</string>
+    <string name="voucher_title">优惠</string>
+    <string name="voucher_expire">截至日期:</string>
+    <string name="voucher_btn_use">使用</string>
+    <string name="voucher_btn_discard">弃置</string>
+    <string name="voucher_terms_condition_apply">适用的条规与细则</string>
+
+    <string name="voucher_use_info">请在收银台出击凭证以兑换此优惠。</string>
+    <string name="voucher_use_btn_confirm">确认</string>
+    <string name="voucher_use_btn_cancel">取消</string>
+    <string name="voucher_use_confirm_has_empty_input">请完成所有输入代码</string>
+    <string name="offers_found">发现五（{0}） 个优惠</string>
+    <string name="searching">正在搜索…</string>
+    <string name="textview_open">开启</string>
+    <string name="terms_and_conditions">与细则</string>
+    <string name="get_user_profile_failed">暂时未能读取个人档案…</string>
+    <string name="update_user_profile_failed">暂时未能修改个人档案…</string>
+    <string name="terms_and_condition_link">http://vav.audaxy.com/terms.html</string>
+    <string name="need_help_link">http://vav.audaxy.com/help.html</string>
+    <string name="help_title">帮助</string>
+    <string name="voucher_code">优惠券序列号</string>
+    <string name="location_gps_turn_on_title">開啟“位置”功能可以讓應用程序效果更好，請到設置開啟您的“位置”功能</string>
+    <string name="stock_left_avaiable">剩下数量 : {0}</string>
+    <string name="login_with_an_existing_account">Login with an existing account</string>
+    <string name="vav_coin">VAV Coin</string>
+    <string name="collected_points_of">Collected points of&#160;</string>
+    <string name="you_received_a">You received a&#160;</string>
+    <string name="great">GREAT!</string>
+    <string name="voucher_book">Voucher Book</string>
+    <string name="stamp_book">Stamp Book</string>
+    <string name="redemption_history">Redemption History</string>
+    <string name="use_voucher_swipe_up_message">Please make sure you show this to the cashier to get your Coins and redeem the voucher.</string>
+    <string name="use_voucher_swipe_up_title">Enter Code</string>
+    <string name="swipe_to_redeem">Swipe to Redeem</string>
+    <string name="horray">HORRAY!</string>
+    <string name="confirm_deleting_the_stamp">Confirm deleting the stamp?</string>
+    <string name="vav_offers">Vav Offers</string>
+    <string name="offer_alert">There are offers around you. Check VAV App to find them.</string>
+    <string name="error_facebook_message">Error while connecting facebook server, Please try again later!</string>
+    <string name="open_camera_failed">Open Camera failed, Please enable camera permission on app setting</string>
+    <string name="read_gallery_file_fail">Read Gallery file failed, Please enable gallery permission on app setting</string>
+    <string name="audio_permission_needed">Need your microphone permission, Please Enable it on app setting</string>
+
+</resources>

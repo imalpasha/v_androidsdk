@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include android:id="@+id/header"
+             layout="@layout/header"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"/>
+
+    <com.isseiaoki.simplecropview.CropImageView
+        android:id="@+id/cropImageView"
+        xmlns:custom="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        custom:cropMode="circle"
+        android:layout_weight="9"/>
+
+    <com.vav.cn.widget.TextViewCustomFontType
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/crop_image_button"
+        android:id="@+id/btnCrop"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/common_button_rect_selector"
+        customStyle="bold"
+        android:textSize="20sp"/>
+
+</LinearLayout>

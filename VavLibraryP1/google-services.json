@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_id": "vav-kl-f3cc1",
+    "project_number": "659842568321",
+    "name": "VAV KL"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659842568321:android:11e679675be5d1c6",
+        "client_id": "android:com.vav.kl",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.vav.kl",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-75110035-1"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

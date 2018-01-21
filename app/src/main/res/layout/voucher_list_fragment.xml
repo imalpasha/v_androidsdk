@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:background="@color/white">
+    <include android:id="@+id/header"
+             layout="@layout/header"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/swipeRefreshHomeList"
+        android:layout_below="@+id/header">
+
+        <com.vav.cn.widget.RecyclerViewEmptySupport
+            android:id="@+id/voucherItemList"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:overScrollMode="never"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true" />
+    <RelativeLayout
+        android:clickable="true"
+        android:id="@+id/rightMenuContent"
+        android:visibility="gone"
+        android:layout_below="@+id/header"
+        android:background="@color/transparent_dark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/firstRelativeLayout"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:padding="15dp"
+                android:background="@color/delete_btn_bg"
+                android:src="@drawable/book_icon"
+                android:id="@+id/imageViewFirst"
+                android:layout_width="@dimen/voucher_list_min_height"
+                android:layout_height="@dimen/voucher_list_min_height" />
+            <TextView
+                android:id="@+id/textviewFirstTitle"
+                android:textColor="@color/expired_voucher_item_background"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/imageViewFirst"
+                android:layout_alignTop="@+id/imageViewFirst"
+                android:layout_alignBottom="@+id/imageViewFirst"
+                android:text="@string/voucher_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/firstRelativeLayout"
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/search_list_divider"/>
+        <RelativeLayout
+            android:id="@+id/secondRelativeLayout"
+            android:layout_below="@+id/divider"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:padding="15dp"
+                android:background="@color/swipe_refresh_color_1"
+                android:src="@drawable/history_icon"
+                android:id="@+id/imageViewSecond"
+                android:layout_width="@dimen/voucher_list_min_height"
+                android:layout_height="@dimen/voucher_list_min_height"/>
+            <TextView
+                android:id="@+id/textviewSecondTitle"
+                android:textColor="@color/swipe_refresh_color_1"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/imageViewSecond"
+                android:layout_alignTop="@+id/imageViewSecond"
+                android:layout_alignBottom="@+id/imageViewSecond"
+                android:text="@string/stamp_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

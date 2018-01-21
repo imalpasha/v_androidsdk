@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent_white"
+                android:id="@+id/viewGroupDialogContainer">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_basic_custom_container_bg"
+        android:layout_margin="40dp"
+        android:layout_centerVertical="true"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/viewGroupContent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data"
+                android:id="@+id/lblTitle"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data"
+                android:id="@+id/lblMessage"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="visible"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewGroupButton"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/viewGroupContent"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_yes_btn"
+                android:id="@+id/btnPositive"
+                android:visibility="visible"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingLeft="@dimen/dialog_basic_custom_button_padding_horizontal"
+                android:paddingRight="@dimen/dialog_basic_custom_button_padding_horizontal"
+                android:paddingTop="@dimen/dialog_basic_custom_button_padding_vertical"
+                android:paddingBottom="@dimen/dialog_basic_custom_button_padding_vertical"
+                android:background="@drawable/dialog_basic_custom_button_selector"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_no_btn"
+                android:id="@+id/btnNegative"
+                android:visibility="visible"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingTop="@dimen/dialog_basic_custom_button_padding_vertical"
+                android:paddingBottom="@dimen/dialog_basic_custom_button_padding_vertical"
+                android:paddingLeft="@dimen/dialog_basic_custom_button_padding_horizontal"
+                android:paddingRight="@dimen/dialog_basic_custom_button_padding_horizontal"
+                android:background="@drawable/dialog_basic_custom_button_selector"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
